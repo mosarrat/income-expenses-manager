@@ -1,0 +1,34 @@
+#header {
+    background: rgb(0, 62, 69);
+    color: #ffffff;
+  }
+  
+  #branding h1 {
+    color: #ffffff;
+  }
+  #head img {
+  border-radius: 50%;
+  width: 35px; /* Ensure the width and height are equal to make it a circle */
+  height: 35px;
+  }
+  div.breadcrumbs {
+    background: rgb(61, 88, 106);
+    color: #ffffff;
+  }
+  
+  .login .submit-row {
+    padding: 0px !important;
+  }
+  
+  input[type="submit"],
+  input[type="button"],
+  .submit-row input {
+    /* width: 100%; */
+    background: rgb(0, 62, 69);
+  }
+  
+  .module h2,
+  .module caption,
+  .inline-group h2 {
+    background: rgb(0, 62, 69);
+  }
