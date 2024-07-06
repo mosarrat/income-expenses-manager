@@ -49,3 +49,5 @@ searchField.addEventListener("keyup", (e) => {
     paginationContainer.style.display = "block";
   }
 });
+
+
