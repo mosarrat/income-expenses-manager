@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-10">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Income Summary</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+           Summary
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="col-md-2">
+      <a href="{% url "income" %}" class="btn btn-primary p-2">BACK</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <div class="col-md-4">
+      <!-- Optional: Add any additional content here -->
+    </div>
+  </div>
+</div>
+
+<!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'js/income_stats.js' %}"></script>
+{% endblock content %}

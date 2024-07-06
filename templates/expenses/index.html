@@ -28,11 +28,16 @@
     <div class="row">
       <div class="col-md-8"></div>
       <div class="col-md-4">
-
         <div class="form-group">
           <input type="text" class="form-control" id="searchField" placeholder="Search">
         </div>
       </div>
+      <div class="col-md-4 mb-3">
+        <a href="{% url 'export-csv'%}" class="btn btn-secondary p-2">Export CSV</a>
+        <a href="{% url 'export-excel'%}" class="btn btn-secondary p-2">Export Excel</a>
+        <a href="{% url 'export-pdf'%}" class="btn btn-secondary p-2" target="_blank">Export Pdf</a>
+      </div>
+      <div class="col-md-8"></div>
     </div>
 <div class="app-table">
 
@@ -68,31 +73,6 @@
     </tbody>
   </table>
 </div>
-
-{% comment %} <p class="no-results" style="display: none;">No results is found here !!!! </p>
-    <div class="table-output">
-
-
-      <table class="table table-stripped table-hover">
-        <thead>
-          <tr>
-            <th>Amount ({{currency}})</th>
-            <th>Category</th>
-            <th>Description</th>
-            <th>Date</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-
-        <tbody  class="table-body">
-
-
-        </tbody>
-      </table>
-    </div> {% endcomment %}
-
-
-
 
     <div class="pagination-container">
     <div class="">
